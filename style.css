@@ -1,0 +1,196 @@
+body {
+    font-family: sans-serif;
+    background-color: #ddd;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+/* mengubah bagian header */
+header {
+    background: linear-gradient(#960083, #ec1063);
+    color: white;
+    padding: 20px;
+    border-bottom: 5px solid orange;
+}
+
+header #judul h1 {
+    float: left;
+    text-shadow: 5px 5px 5px gray;
+}
+
+header nav {
+    float: right;
+}
+
+header li {
+    float: left;
+    margin-right: 30px;
+    margin-top: 14px;
+
+}
+
+header li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+header a:hover {
+    background-color: rgba(106, 133, 185, 0.8);
+    display: inline-block;
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+header a:active {
+    color: salmon;
+}
+
+
+
+/* banner */
+
+.banner {
+    min-height: 400px;
+    background-image: url("img/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -220px;
+}
+
+
+.banner h2 {
+    margin-top: 150px;
+    text-align: center;
+    color: #ec1063;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 2px slategray;
+    text-align: center;
+}
+
+.banner p {
+    color: #ec1063;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+/* langganan atau form */
+#langganan {
+    background: linear-gradient(to top, #960083, #ec1063);
+    margin-left: -20px;
+    padding: 20px;
+}
+
+#langganan h2 {
+    color: white;
+    font-size: 30px;
+    float: left;
+}
+
+#langganan form {
+    float: right;
+
+}
+
+#langganan input[type="text"],
+#langganan input[type="password"],
+#langganan input[type="email"] {
+    padding: 5px;
+    width: 200px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+/* menu gambar */
+
+.gambar {
+    margin-top: 20px;
+    margin-bottom: 250px;
+}
+
+.gambar .subgambar {
+    text-align: center;
+    float: left;
+    width: 29%;
+    padding: 10px;
+}
+
+.subgambar img {
+    width: 100px;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.footer footer {
+    background: linear-gradient(to top, #960083, #ec1063);
+    font-size: 20px;
+    padding: 0 0 5px 0;
+    text-align: center;
+
+
+}
+
+/* Media Query */
+@media screen and (max-width:800px) {
+
+    #judul h1,
+    header nav,
+    header ul,
+    header li,
+    #langganan h2,
+    #langganan form,
+    .gambar .subgambar {
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+
+    #judul h1 {
+        margin-bottom: 20px;
+    }
+
+    nav {
+        margin-bottom: 10px;
+    }
+
+    .banner h2 {
+        margin-top: 80px;
+    }
+
+    #langganan input[type="email"],
+    #langganan input[type="text"],
+    #langganan input[type="password"] {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        width: 50%;
+        margin: auto;
+    }
+
+    .gambar .subgambar {
+        margin-left: -20px;
+    }
+}
